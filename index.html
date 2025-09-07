@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farming Assistance</title>
+  <link rel="stylesheet" href="style.css" />
+   <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+  <!-- ✅ GLTF Loader -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+     <canvas id="bg"></canvas>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">🌱 Farming Assistance</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with 3D Background -->
+  <section class="hero">
+    <canvas id="bg"></canvas>
+    <div class="hero-text">
+      <h1>Smart Farming</h1>
+      <p>Technology + Nature = Future Farming</p>
+      <button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Explore</button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      We provide farmers with innovative tools and insights, from weather forecasts to crop guidance and market prices — building a smarter agricultural future.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+      <div class="service-card">
+        <h3>🌾 Crop Advice</h3>
+        <p>Expert tips for crop selection and soil health.</p>
+      </div>
+      <div class="service-card">
+        <h3>🌦 Forecasts</h3>
+        <p>Accurate weather data for safe farming decisions.</p>
+      </div>
+      <div class="service-card">
+        <h3>💹 Market Trends</h3>
+        <p>Live updates of market prices and demand.</p>
+      </div>
+      <div class="service-card">
+        <h3>🤝 Farmer Support</h3>
+        <p>24/7 assistance for farmers worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Farming Assistance | Designed for Placement Showcase</p>
+  </footer>
+
+  <!-- Three.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
